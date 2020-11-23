@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackatlon</title>
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div
+      id="mobilemenu"
+      class="w-full fixed top-0 z-50 h-full pointer-events-none"
+    >
+      <div
+        class="menu-slide bg-gray-800 h-full top-0 absolute w-full p-4 transform translate-x-full active:translate-x-0 transition-all"
+      >
+        <img
+          src="./img/close.svg"
+          alt="close"
+          class="mr-0 ml-auto"
+          id="closebutton"
+        />
+        <nav class="flex my-4 flex-col">
+          <div class="inicio font-body text-white my-3 cursor-pointer">
+            Inicio
+          </div>
+          <div
+            class="preguntas-frecuentes font-body text-white my-2 cursor-pointer"
+          >
+            Preguntas Frecuentes
+          </div>
+          <div class="para-participar font-body text-white my-2 cursor-pointer">
+            Para Participar
+          </div>
+          <div class="premios-equipo font-body text-white my-2 cursor-pointer">
+            Premios por Equipo
+          </div>
+          <div class="organizan font-body text-white my-2 cursor-pointer">
+            Organizan
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="hero relative">
+      <div class="info">
+        <div class="container m-auto flex flex-col">
+          <header class="m-auto hidden md:flex">
+            <nav class="flex my-4 flex-col md:flex-row">
+              <div class="inicio font-body text-white mx-3 cursor-pointer">
+                Inicio
+              </div>
+              <div
+                class="preguntas-frecuentes font-body text-white mx-3 cursor-pointer"
+              >
+                Preguntas Frecuentes
+              </div>
+              <div
+                class="para-participar font-body text-white mx-3 cursor-pointer"
+              >
+                Para Participar
+              </div>
+              <div
+                class="premios-equipo font-body text-white mx-3 cursor-pointer"
+              >
+                Premios por Equipo
+              </div>
+              <div class="organizan font-body text-white mx-3 cursor-pointer">
+                Organizan
+              </div>
+            </nav>
+          </header>
+
+          <img
+            src="./img/menumobile.svg"
+            alt="menu"
+            class="mt-4 mr-4 ml-auto md:hidden"
+            id="menubutton"
+          />
+
+          <img
+            src="./img/logo.png"
+            alt="logo"
+            class="logo w-80 mt-20 md:mt-0 m-auto"
+          />
+          <div
+            class="callaction flex flex-col md:flex-row justify-center h-80 mt-40 md:mt-16"
+          >
+            <div class="maininfo md:w-1/4 flex flex-col align-end justify-end">
+              <h3
+                class="font-title text-white text-center md:text-right text-lg md:text-2xl"
+              >
+                Gamificando la educación chilena
+              </h3>
+              <p class="font-body text-white text-center md:text-right my-3">
+                ¿Programamos la educación del futuro?
+              </p>
+              <button
+                class="font-body w-1/2 m-auto md:ml-auto text-center bg-yellow-300 text-black rounded-2xl px-5 py-1 mt-2"
+              >
+                INSCRIBETE
+              </button>
+            </div>
+            <div class="md:w-1/3">
+              <img
+                src="./img/marioMain.png"
+                alt="mario"
+                class="mariomain pt-8 md:pt-0"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq flex flex-col mb-16 mt-24">
+      <div class="container m-auto">
+        <div class="title my-12">
+          <img
+            src="./img/marioPreguntas.png"
+            alt="mario pregunta"
+            class="m-auto"
+          />
+          <h3 class="font-body text-red-400 text-center text-3xl">
+            Preguntas Frecuentes
+          </h3>
+        </div>
+        <div class="cards flex flex-wrap md:flex-nowrap justify-center">
+          <div
+            class="card my-12 mx-1 md:mx-6 md:my-0 p-10 rounded shadow-lg hover:shadow-ml flex flex-col w-full md:w-1/3  max-h-36 md:max-h-28 hover:max-h-screen hover:bg-gray-200 transition-all"
+          >
+            <h2 class="font-body text-white text-2xl text-center">
+              ¿Qué es una hackathon?
+            </h2>
+            <img
+              class="my-6 w-6 m-auto animate-pulse"
+              src="./img/plus.svg"
+              alt="plus"
+            />
+            <p class="text-white text-center">
+              Es un evento donde se identifican problemas en torno a una
+              temática, se crean equipos de trabajo y buscan soluciones creando
+              un prototipo que materialice la solución a un problema
+            </p>
+          </div>
+          <div
+            class="card my-12 mx-1 md:mx-6 md:my-0 p-10 rounded shadow-lg hover:shadow-ml flex flex-col w-full md:w-1/3  max-h-36 md:max-h-28 hover:max-h-screen hover:bg-gray-200 transition-all"
+          >
+            <h2 class="font-body text-white text-2xl text-center">
+              ¿Qué es gamificación?
+            </h2>
+            <img
+              class="my-6 w-6 m-auto animate-pulse"
+              src="./img/plus.svg"
+              alt="plus"
+            />
+            <p class="text-white text-center">
+              Es una técnica de aprendizaje quie traslada la mecánica de los
+              juegos al ámbito edicativo-profesional con el fin de conseguir
+              mejores resultados: sirve para absorber conocimientos, para
+              mejorar alguna habilidad o para recompensar acciones concretas
+            </p>
+          </div>
+          <div
+            class="card my-12 mx-1 md:mx-6 md:my-0 p-10 rounded shadow-lg hover:shadow-ml flex flex-col w-full md:w-1/3  max-h-36 md:max-h-28 hover:max-h-screen hover:bg-gray-200 transition-all"
+          >
+            <h2 class="font-body text-white text-2xl text-center">
+              ¿Qué busca este evento?
+            </h2>
+            <img
+              class="my-6 w-6 m-auto animate-pulse"
+              src="./img/plus.svg"
+              alt="plus"
+            />
+            <p class="text-white text-center">
+              Crear soluciones tecnólogicas que hagan frente a diferentes
+              problemas de la educación, es por eso que necesitamos
+              programadores, profesores y diseñadores que deseen ser parte de
+              estas soluciones. Buscaremos darle continuidad a los distintos
+              proyectos independiente del lugar obtenido y testearlo en un
+              ambiente real. Creemos que sus proyectos ayudarán a mejorar la
+              educación del país
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="para-participar-section">
+        <div class="container">
+
+        </div>
+    </div>
+    <div class="premios-equipo-section">
+
+    </div>
+    <div class="organizan-section">
+
+    </div>
+    <footer>
+
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

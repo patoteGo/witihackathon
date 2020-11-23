@@ -1,0 +1,13 @@
+.hero
+{
+    background: url('./../img/headerBG.svg');
+    background-repeat: no-repeat;
+}
+
+.card{
+    background-image: linear-gradient(#044E98 , #FB8600);
+}
+
+.para-participar-section {
+    background-color: #F68402;
+}
