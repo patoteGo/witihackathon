@@ -10,6 +10,10 @@ module.exports = {
         body: ["Aldrich"],
         title: ['"Press Start 2P"'],
       },
+      backgroundImage: theme => ({
+        'hero-pattern': "url('/dist/img/hero-pattern.png')",
+        'footer-texture': "url('/dist/img/footer-texture.png')",
+       })
     },
   },
   variants: {

@@ -5,9 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hackatlon</title>
     <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
+    <div class="fixedmenu transition-all fixed top-0 z-50 bg-blue-500 w-full m-auto shadow-ml">
+      <div class="container m-auto flex m-auto justify-center">
+        <img
+        src="./img/logo.png"
+        alt="logo"
+        class="w-48 mr-12"
+      />
+        <nav class="hidden md:flex m-x-auto my-4 flex-col md:flex-row justify-center">
+          <div
+            class="jump-menu inicio font-body text-white mx-3 cursor-pointer"
+            to="header"
+          >
+            Inicio
+          </div>
+          <div
+            class="jump-menu preguntas-frecuentes font-body text-white mx-3 cursor-pointer"
+            to="faq"
+          >
+            Preguntas Frecuentes
+          </div>
+          <div
+            class="jump-menu para-participar font-body text-white mx-3 cursor-pointer"
+            to="participar"
+          >
+            Para Participar
+          </div>
+          <div
+            class="jump-menu premios-equipo font-body text-white mx-3 cursor-pointer"
+            to="premios"
+          >
+            Premios por Equipo
+          </div>
+          <div
+            class="jump-menu organizan font-body text-white mx-3 cursor-pointer"
+            to="organizan"
+          >
+            Organizan
+          </div>
+        </nav>
+        <img
+        src="./img/menumobile.svg"
+        alt="menu"
+        class="my-4 mr-4 ml-auto md:hidden"
+        id="menubutton"
+      />
+      </div>
+    </div>
     <div
       id="mobilemenu"
       class="w-full fixed top-0 z-50 h-full pointer-events-none"
@@ -22,50 +70,72 @@
           id="closebutton"
         />
         <nav class="flex my-4 flex-col">
-          <div class="inicio font-body text-white my-3 cursor-pointer">
+          <div
+            class="jump-menu inicio font-body text-white my-3 cursor-pointer"
+            to="header"
+          >
             Inicio
           </div>
           <div
-            class="preguntas-frecuentes font-body text-white my-2 cursor-pointer"
+            class="jump-menu preguntas-frecuentes font-body text-white my-2 cursor-pointer"
+            to="faq"
           >
             Preguntas Frecuentes
           </div>
-          <div class="para-participar font-body text-white my-2 cursor-pointer">
+          <div
+            class="jump-menu para-participar font-body text-white my-2 cursor-pointer"
+            to="participar"
+          >
             Para Participar
           </div>
-          <div class="premios-equipo font-body text-white my-2 cursor-pointer">
+          <div
+            class="jump-menu premios-equipo font-body text-white my-2 cursor-pointer"
+            to="premios"
+          >
             Premios por Equipo
           </div>
-          <div class="organizan font-body text-white my-2 cursor-pointer">
+          <div
+            class="jump-menu organizan font-body text-white my-2 cursor-pointer"
+            to="organizan"
+          >
             Organizan
           </div>
         </nav>
       </div>
     </div>
-    <div class="hero relative">
+    <div class="hero relative" id="header">
       <div class="info">
         <div class="container m-auto flex flex-col">
           <header class="m-auto hidden md:flex">
             <nav class="flex my-4 flex-col md:flex-row">
-              <div class="inicio font-body text-white mx-3 cursor-pointer">
+              <div
+                class="jump-menu inicio font-body text-white mx-3 cursor-pointer"
+                to="header"
+              >
                 Inicio
               </div>
               <div
-                class="preguntas-frecuentes font-body text-white mx-3 cursor-pointer"
+                class="jump-menu preguntas-frecuentes font-body text-white mx-3 cursor-pointer"
+                to="faq"
               >
                 Preguntas Frecuentes
               </div>
               <div
-                class="para-participar font-body text-white mx-3 cursor-pointer"
+                class="jump-menu para-participar font-body text-white mx-3 cursor-pointer"
+                to="participar"
               >
                 Para Participar
               </div>
               <div
-                class="premios-equipo font-body text-white mx-3 cursor-pointer"
+                class="jump-menu premios-equipo font-body text-white mx-3 cursor-pointer"
+                to="premios"
               >
                 Premios por Equipo
               </div>
-              <div class="organizan font-body text-white mx-3 cursor-pointer">
+              <div
+                class="jump-menu organizan font-body text-white mx-3 cursor-pointer"
+                to="organizan"
+              >
                 Organizan
               </div>
             </nav>
@@ -82,11 +152,13 @@
             src="./img/logo.png"
             alt="logo"
             class="logo w-80 mt-20 md:mt-0 m-auto"
+            data-aos-delay="300"
+            data-aos="fade-bottom"
           />
           <div
             class="callaction flex flex-col md:flex-row justify-center h-80 mt-40 md:mt-16"
           >
-            <div class="maininfo md:w-1/4 flex flex-col align-end justify-end">
+            <div class="maininfo md:w-1/4 flex flex-col align-end justify-end" data-aos="fade-right">
               <h3
                 class="font-title text-white text-center md:text-right text-lg md:text-2xl"
               >
@@ -96,13 +168,15 @@
                 ¿Programamos la educación del futuro?
               </p>
               <button
-                class="font-body w-1/2 m-auto md:ml-auto text-center bg-yellow-300 text-black rounded-2xl px-5 py-1 mt-2"
+                href="https://cutt.ly/sgPeZs3" target="_self"
+                class="font-body w-1/2 m-auto md:ml-auto text-center bg-yellow-300 text-black rounded-2xl px-5 py-1 mt-2 animate-bounce"
               >
                 INSCRIBETE
               </button>
             </div>
             <div class="md:w-1/3">
               <img
+                data-aos="fade-left"
                 src="./img/marioMain.png"
                 alt="mario"
                 class="mariomain pt-8 md:pt-0"
@@ -112,8 +186,8 @@
         </div>
       </div>
     </div>
-    <div class="faq flex flex-col mb-16 mt-24">
-      <div class="container m-auto">
+    <div class="faq flex flex-col mb-16 mt-24" id="faq">
+      <div class="container m-auto" >
         <div class="title my-12">
           <img
             src="./img/marioPreguntas.png"
@@ -124,11 +198,12 @@
             Preguntas Frecuentes
           </h3>
         </div>
-        <div class="cards flex flex-wrap md:flex-nowrap justify-center">
+        <div class="cards flex flex-wrap md:flex-nowrap justify-center overflow-x-hidden">
           <div
-            class="card my-12 mx-1 md:mx-6 md:my-0 p-10 rounded shadow-lg hover:shadow-ml flex flex-col w-full md:w-1/3  max-h-36 md:max-h-28 hover:max-h-screen hover:bg-gray-200 transition-all"
+            data-aos="fade-right"
+            class="card my-12 mx-1 md:mx-6 md:my-0 p-10 rounded shadow-lg hover:shadow-ml flex flex-col w-full md:w-1/3 max-h-36 md:max-h-28 hover:max-h-screen hover:bg-gray-200 transition-all"
           >
-            <h2 class="font-body text-white text-2xl text-center">
+            <h2 class="font-body text-white text-2xl md:text-xl text-center">
               ¿Qué es una hackathon?
             </h2>
             <img
@@ -143,9 +218,10 @@
             </p>
           </div>
           <div
-            class="card my-12 mx-1 md:mx-6 md:my-0 p-10 rounded shadow-lg hover:shadow-ml flex flex-col w-full md:w-1/3  max-h-36 md:max-h-28 hover:max-h-screen hover:bg-gray-200 transition-all"
+            data-aos="fade-up"
+            class="card my-12 mx-1 md:mx-6 md:my-0 p-10 rounded shadow-lg hover:shadow-ml flex flex-col w-full md:w-1/3 max-h-36 md:max-h-28 hover:max-h-screen hover:bg-gray-200 transition-all"
           >
-            <h2 class="font-body text-white text-2xl text-center">
+            <h2 class="font-body text-white text-2xl text-center md:text-xl">
               ¿Qué es gamificación?
             </h2>
             <img
@@ -161,9 +237,10 @@
             </p>
           </div>
           <div
-            class="card my-12 mx-1 md:mx-6 md:my-0 p-10 rounded shadow-lg hover:shadow-ml flex flex-col w-full md:w-1/3  max-h-36 md:max-h-28 hover:max-h-screen hover:bg-gray-200 transition-all"
+          data-aos="fade-left"
+            class="card my-12 mx-1 md:mx-6 md:my-0 p-10 rounded shadow-lg hover:shadow-ml flex flex-col w-full md:w-1/3 max-h-36 md:max-h-28 hover:max-h-screen hover:bg-gray-200 transition-all"
           >
-            <h2 class="font-body text-white text-2xl text-center">
+            <h2 class="font-body text-white text-2xl md:text-xl text-center">
               ¿Qué busca este evento?
             </h2>
             <img
@@ -184,20 +261,211 @@
         </div>
       </div>
     </div>
-    <div class="para-participar-section">
-        <div class="container">
-
+    <div
+      class="para-participar-section py-10 px-2 md:p-10 md:py-15 relative"
+      id="participar"
+    >
+      <div class="container m-auto">
+        <h3 class="font-body text-white text-center text-3xl">
+          Para Participar
+        </h3>
+        <div class="imgsParticipar hidden md:block">
+          <img
+            data-aos="fade-right"
+            class="img-slide1 w-1/2 absolute active"
+            src="./img/joystick1.png"
+            alt="joystick"
+          />
+          <img
+            data-aos="fade-right"
+            class="img-slide2 w-1/5 absolute"
+            src="./img/questionBox.png"
+            alt="questionBox"
+          />
+          <img
+            data-aos="fade-right"
+            class="img-slide3 w-80 absolute"
+            src="./img/clock.png"
+            alt="clock"
+          />
         </div>
+        <div class="text w-full md:w-1/2 ml-auto mt-12">
+          <div class="nav flex justify-between">
+            <div
+              class="option cursor-pointer text-white font-body text-lg border-b-2 px-5 w-full text-center active"
+            >
+              Equipos
+            </div>
+            <div
+              class="option cursor-pointer text-white font-body text-lg border-b-2 px-5 w-full text-center"
+            >
+              Fechas
+            </div>
+            <div
+              class="option cursor-pointer text-white font-body text-lg border-b-2 px-5 w-full text-center"
+            >
+              Resultado
+            </div>
+          </div>
+          <div class="slides overflow-hidden relative p-4 h-96">
+            <div class="slides-wrapper absolute flex left-0">
+              <div class="slide w-full mx-2 px-2">
+                <h5 class="font-body text-white text-left text-3xl my-8">
+                  LOS EQUIPOS
+                </h5>
+                <p class="text-white font-body">
+                  Te puedes inscribir individualmente o también puedes hacerlo
+                  con un equipo completo, solo necesitas decirlo cuando te
+                  llamemos. Los equipos estarán conformados por:
+                </p>
+                <ul class="my-6">
+                  <li class="list-disc text-white text-lg font-body my-1">
+                    3 Desarrolladores
+                  </li>
+                  <li class="list-disc text-white text-lg font-body m-1">1 Profesor</li>
+                  <li class="list-disc text-white text-lg font-body m-1">1 Diseñador</li>
+                </ul>
+              </div>
+              <div class="slide w-full px-2">
+                <h5 class="font-body text-white text-left text-3xl my-8 ">
+                  ¿CÚANDO ES?
+                </h5>
+                <p class="text-white font-body">
+                  la Hackathon tiene una duración de 30 Horas con descanso, será en <span class="font-bold">Discord</span> y será trasmitida en <span class="font-bold">Streaming</span>, y se realizará durante en 3 días de la siguinete forma.
+                </p>
+                <ul class="my-6">
+                  <li class="list-disc text-white text-lg font-body my-1">
+                    <span class="font-bold">Viernes 15 de Enero</span> a las <span class="font-bold">18:00 a 23:59</span> donde se validaran las ideas
+                  </li>
+                  <li class="list-disc text-white text-lg font-body my-1"><span class="font-bold">Sábado 16 de Enero</span> a las <span class="font-bold">08:00 a 23:59</span> donde se comenzara con el primer prototipado</li>
+                  <li class="list-disc text-white text-lg font-body my-1 "><span class="font-bold">Domingo 17 de Enero</span> a las <span class="font-bold">09:00 a 17:00</span> donde se presentara el MVP y se realizara la premiación</li>
+                </ul>
+              </div>
+              <div class="slide w-full px-2">
+                <h5 class="font-body text-white text-left text-3xl my-8">
+                  Analisis de Resultados
+                </h5>
+                <p class="text-white font-body">Esta etapa es post concurso y es dónde se registaran los resultado en un ambiente real
+                </p>
+                <ul class="my-6">
+                  <li class="list-disc text-white text-lg font-body my-1 ">el mes de <span class="font-bold">Marzo</span> se testeara en la <span class="font-bold">sala de clase</span> y se registraran los resultados
+                  </li>
+                  <li class="list-disc text-white text-lg font-body my-1 ">primeras semanas de <span class="font-bold">Abril</span> se invitara a analizar y discutir resultador para generar <span class="font-bold">continuidad del proyecto</span> con la comunidad</li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="premios-equipo-section">
+      <h3
+        class="font-body text-red-400 text-center text-3xl my-12"
+        id="premios"
+      >
+        Premios por equipo
+      </h3>
+      <div class="premios flex flex-col md:flex-row">
+        <div class="premios-img w-1/2 relative">
+          <img class="img-phone ml-24" src="./img/prizeCell.png" alt="cell" />
+          <img
+            class="absolute top-0 img-coin right-0 md:right-80 w-1/4 md:w-48"
+            src="./img/priceCoin.png"
+            alt="coin"
+          />
+        </div>
+        <div class="premios-amount w-full p-1 md:w-1/2 overflow-x-hidden">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="200"
+            class="bg-blue-500 p-12 md:p-4 px-16 md:px-16 rounded md:rounded-l my-5"
+          >
+            <p class="text-white font-body">Primer Lugar</p>
+            <h2 class="text-yellow-300 font-body text-4xl my-3">$1.300.000</h2>
+            <p class="text-white font-body">Precio referencia x equipo</p>
+            <br />
+            <ul>
+              <li class="list-disc text-white font-body text-lg md:text-xl">2 Pasajes a San Pedro de Atacama por 3 días</li>
+            </ul>
+          </div>
 
+          <div
+          data-aos="fade-left"
+          class="bg-blue-500 p-12 md:p-4 px-16 md:px-16 rounded md:rounded-l my-5"
+        >
+          <p class="text-white font-body">Segundo Lugar</p>
+          <h2 class="text-yellow-300 font-body text-4xl my-3">$500.000</h2>
+          <p class="text-white font-body">Precio referencia x equipo</p>
+          <br />
+          <ul>
+            <li class="list-disc text-white font-body text-lg md:text-xl">Audifonos Bluetooth SkullCandy</li>
+            <li class="list-disc text-white font-body text-lg md:text-xl">Pack Teclado Mecánico Porta Celular + Mouse Gamer</li>
+          </ul>
+
+        </div>
+
+        <div
+        data-aos="fade-left"
+        class="bg-blue-500 p-12 md:p-4 px-16 md:px-16 rounded md:rounded-l my-5"
+      >
+        <p class="text-white font-body">Tercer Lugar</p>
+        <h2 class="text-yellow-300 font-body text-4xl my-3">$200.000</h2>
+        <p class="text-white font-body">Precio referencia x equipo</p>
+        <br />
+        <ul>
+          <li class="list-disc text-white font-body text-lg md:text-xl">Pack Teclado Mecánico Porta Celular + Mouse Gamer</li>
+        </ul>
+      </div>
+          
+        </div>
+      </div>
     </div>
-    <div class="organizan-section">
-
+    <div class="organizan-section mx-34 mb-24">
+      <h3
+        class="font-body text-red-400 text-center text-3xl my-9 mb-16"
+        id="organizan"
+      >
+        Organizan
+      </h3>
+      <div class="container m-auto w-full md:w-1/2">
+        <div class="orgs flex w-full justify-between align-center overflow-x-hidden">
+          <div      data-aos="fade-right" class="org flex flex-col align-center justify-center">
+            <img class="h-16 m-auto" src="./img/ludens.png" alt="" />
+            <p class="text-center mt-4 font-body">Ludens</p>
+          </div>
+          <div      data-aos="fade-down" class="org">
+            <img class="h-16 m-auto" src="./img/olmos.png" alt="" />
+            <p class="text-center mt-4 font-body">Colegio Los Olmos</p>
+          </div>
+          <div      data-aos="fade-left" class="org">
+            <img class="h-16 m-auto" src="./img/witi.png" alt="" />
+            <p class="text-center mt-4 font-body">Witi</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <footer>
-
+    <footer class="bg-footer-texture bg-cover h-96">
+      <div class="container m-auto px-4 md:px-0 pt-32 md:pt-52 w-full md:w-1/2">
+        <p class="font-body text-white text-2xl font-bold animate-bounce">
+          Inscríbete
+          <a
+            class="text-yellow-300 hover:text-yellow-400 cursor-pointer transition-all "
+            href="https://cutt.ly/sgPeZs3" target="_self"
+            >Aquí !</a
+          >
+        </p>
+        <br />
+        <p class="font-body text-white text-lg">
+          Te esperamos este <span class="font-bold">14, 15 y 16 de Enero</span>,
+          aprenderás mucho, lo pasaras increible y habran premios sorpresas.
+        </p>
+      </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/main.js"></script>
   </body>
 </html>
