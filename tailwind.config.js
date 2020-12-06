@@ -11,8 +11,8 @@ module.exports = {
         title: ['"Press Start 2P"'],
       },
       backgroundImage: theme => ({
-        'hero-pattern': "url('/img/hero-pattern.png')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'hero-pattern': "url('/witihackathon/img/hero-pattern.png')",
+        'footer-texture': "url('/witihackathon/img/footer-texture.png')",
        })
     },
   },
