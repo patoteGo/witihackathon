@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body class="overflow-x-hidden">
-    <div class="fixedmenu transition-all fixed top-0 z-50 bg-blue-500 w-full m-auto shadow-ml">
+    <div class="fixedmenu transition-all fixed top-0 z-50 bg-blue-500 w-full m-auto shadow-xl">
       <div class="container m-auto flex m-auto justify-center">
         <img
         src="./img/logo.png"
@@ -168,10 +168,10 @@
                 ¿Programamos la educación del futuro?
               </p>
               <button
-                href="https://cutt.ly/sgPeZs3" target="_self"
+                
                 class="font-body w-1/2 m-auto md:ml-auto text-center bg-yellow-300 text-black rounded-2xl px-5 py-1 mt-2 animate-bounce"
               >
-                INSCRIBETE
+                <a href="https://cutt.ly/sgPeZs3" target="_self">INSCRIBETE</a>
               </button>
             </div>
             <div class="md:w-1/3">
@@ -271,20 +271,19 @@
         </h3>
         <div class="imgsParticipar hidden md:block">
           <img
-            data-aos="fade-right"
-            class="img-slide1 w-1/2 absolute active"
+            class="img-slide1 w-1/2 absolute active transition-all"
             src="./img/joystick1.png"
             alt="joystick"
           />
           <img
-            data-aos="fade-right"
-            class="img-slide2 w-1/5 absolute"
+
+            class="img-slide2 w-1/5 absolute transition-all"
             src="./img/questionBox.png"
             alt="questionBox"
           />
           <img
-            data-aos="fade-right"
-            class="img-slide3 w-80 absolute"
+  
+            class="img-slide3 w-80 absolute transition-all"
             src="./img/clock.png"
             alt="clock"
           />
@@ -429,19 +428,20 @@
         Organizan
       </h3>
       <div class="container m-auto w-full md:w-1/2">
-        <div class="orgs flex w-full justify-between align-center overflow-x-hidden">
-          <div      data-aos="fade-right" class="org flex flex-col align-center justify-center">
+        <div class="orgs flex flex-wrap w-full justify-center md:justify-between align-center overflow-x-hidden">
+          <div      data-aos="fade-right" class="org flex flex-col align-center justify-center w-1/2 md:w-1/3 my-5 md:my-0">
             <img class="h-16 m-auto" src="./img/ludens.png" alt="" />
             <p class="text-center mt-4 font-body">Ludens</p>
           </div>
-          <div      data-aos="fade-down" class="org">
-            <img class="h-16 m-auto" src="./img/olmos.png" alt="" />
-            <p class="text-center mt-4 font-body">Colegio Los Olmos</p>
-          </div>
-          <div      data-aos="fade-left" class="org">
+          <div      data-aos="fade-down" class="org org flex flex-col align-center justify-center w-1/2 md:w-1/3 my-5 md:my-0">
             <img class="h-16 m-auto" src="./img/witi.png" alt="" />
             <p class="text-center mt-4 font-body">Witi</p>
           </div>
+          <div      data-aos="fade-left" class="org org flex flex-col align-center justify-center w-1/2 md:w-1/3 my-5 md:my-0">
+            <img class="h-16 m-auto" src="./img/olmos.png" alt="" />
+            <p class="text-center mt-4 font-body">Colegio Los Olmos</p>
+          </div>
+          
         </div>
       </div>
     </div>

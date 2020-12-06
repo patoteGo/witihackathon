@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
     enabled: true, //true un prod mode
-    content: ["dist/*.html"],
+    content: ["docs/*.html"],
   },
   darkMode: "media", // or 'media' or 'class'
   theme: {
@@ -11,8 +11,8 @@ module.exports = {
         title: ['"Press Start 2P"'],
       },
       backgroundImage: theme => ({
-        'hero-pattern': "url('/dist/img/hero-pattern.png')",
-        'footer-texture': "url('/dist/img/footer-texture.png')",
+        'hero-pattern': "url('/docs/img/hero-pattern.png')",
+        'footer-texture': "url('/docs/img/footer-texture.png')",
        })
     },
   },

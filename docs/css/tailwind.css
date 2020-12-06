@@ -567,7 +567,7 @@ video {
 }
 
 .bg-footer-texture{
-  background-image: url('/dist/img/footer-texture.png');
+  background-image: url('/docs/img/footer-texture.png');
 }
 
 .bg-cover{
@@ -901,6 +901,11 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 *{
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
   --tw-ring-offset-width: 0px;
@@ -1099,6 +1104,10 @@ video {
 
   .md\:flex-nowrap{
     flex-wrap: nowrap;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
   }
 
   .md\:text-xl{
