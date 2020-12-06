@@ -567,7 +567,7 @@ video {
 }
 
 .bg-footer-texture{
-  background-image: url('/docs/img/footer-texture.png');
+  background-image: url('./img/footer-texture.png');
 }
 
 .bg-cover{
