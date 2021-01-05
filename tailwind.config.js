@@ -13,7 +13,7 @@ module.exports = {
       backgroundImage: theme => ({
         'hero-pattern': "url('./../img/hero-pattern.png')",
         'footer-texture': "url('./../img/footer-texture.png')",
-       })
+       }),
     },
   },
   variants: {
